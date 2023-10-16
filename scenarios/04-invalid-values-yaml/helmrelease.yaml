@@ -1,0 +1,16 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: [scenario-name]
+  namespace: default
+spec:
+  releaseName: [scenario-name]
+  chart:
+    repository: "[repository-url]"
+    name: "[chart-name]"
+    version: "[chart-version]"
+  values:
+    # Specify custom values for the Helm chart (if needed)
+    key: value
+  # Additional HelmRelease spec fields can be customized as per the scenario requirements
+
